@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinRoom.NewUserRoomJoin">
+
+    <Button
+        android:id="@+id/NewRoomCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RoomNameCreate"
+        android:layout_centerHorizontal="true"
+        android:text="Create Room"/>
+
+    <TextView
+        android:id="@+id/newRoomCreateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="Want to create a new room? Click here and it will create a new room with an ID for others to use to join" />
+
+    <TextView
+        android:id="@+id/newRoomJoinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NewRoomCreate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Want to join an already created room? Enter the room ID" />
+
+    <Button
+        android:id="@+id/RoomJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomIdEditText"
+        android:layout_centerHorizontal="true"
+        android:text="Join Room" />
+
+    <EditText
+        android:id="@+id/roomIdEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/newRoomJoinTextView"
+        android:hint="Enter ID of room"
+        android:text="" />
+
+    <ListView
+        android:id="@+id/RoomList"
+        android:layout_width="match_parent"
+        android:layout_below="@id/alreadyJoinedTextView"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/alreadyJoinedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonUpdateRooms"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Already Joined Rooms" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoutTextView"
+        android:layout_centerHorizontal="true"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/logoutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/RoomJoin"
+        android:text="Not your account? Logout below" />
+
+    <EditText
+        android:id="@+id/RoomNameCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/newRoomCreateTextView"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPersonName"
+        android:hint="Room Name" />
+
+    <Button
+        android:id="@+id/buttonUpdateRooms"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/logoutButton"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Update Rooms" />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    tools:context=".Schedule.NewScheduleActivity">
+
+    <TextView
+        android:id="@+id/addNewEventTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:text="Create New Event" />
+
+    <Button
+        android:id="@+id/addNewEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:layout_below="@id/eventDescription"
+        android:text="Add Event" />
+
+    <EditText
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:layout_marginVertical="10dp"
+        android:hint="Enter Start Time as form xx:xx"
+        android:layout_below="@id/addNewEventTextView"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startTime"
+        android:ems="12"
+        android:layout_marginTop="20dp"
+
+        android:hint="Enter End Time as form xx:xx"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/eventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginVertical="20dp"
+
+        android:inputType="textPersonName"
+        android:layout_below="@id/endTime"
+        android:hint="Event Name" />
+
+    <EditText
+        android:id="@+id/eventDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginVertical="10dp"
+
+        android:hint="Enter Description"
+        android:gravity="start|top"
+        android:layout_below="@id/eventName"
+        android:inputType="textMultiLine" />
+
+    <Switch
+        android:id="@+id/switchAmPmStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startTime"
+        android:text="Switch off for AM, switch on for PM" />
+
+    <Switch
+        android:id="@+id/switchAmPmEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endTime"
+        android:text="Switch off for AM, switch on for PM" />
+
+    <Button
+        android:id="@+id/finishFromNewSchedule"
+        android:layout_below="@id/addNewEventButton"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish" />
+
+</RelativeLayout>

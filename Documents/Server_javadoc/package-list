@@ -1,0 +1,11 @@
+com.database
+com.database.bulletin
+com.database.bulletin.pins
+com.database.roomList
+com.database.roomList.tasks
+com.database.roomList.tasks.subtasks
+com.database.roomMembers
+com.database.rooms
+com.database.schedule
+com.database.schedule.events
+com.database.user
